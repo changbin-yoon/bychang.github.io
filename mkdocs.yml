@@ -91,6 +91,9 @@ nav:
           - 08. DirectPV Erasure Set 쓰기 차단: troubleshooting/storage-aistor/08-directpv-erasure-set.md
       - 검증 보고서:
           - 개요: troubleshooting/reports/index.md
+          - Kubeflow Spark Operator 운영 분석: troubleshooting/reports/kubeflow-spark-operator.md
+          - Oracle 21c/26ai HMS 스키마 검증: troubleshooting/reports/oracle-hms-schema.md
+          - HMS vs Polaris 카탈로그 비교: troubleshooting/reports/hms-vs-polaris.md
   - 연락처: contact/index.md
 
 markdown_extensions:

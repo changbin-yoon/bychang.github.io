@@ -12,7 +12,7 @@ title: 신기술 조사 · PoC · 문서화
 
 ## PoC
 
-- **Gravitino / Polaris Iceberg 카탈로그 PoC**
+- **Gravitino / Polaris Iceberg 카탈로그 PoC** — 상세 검증 보고서: [HMS vs Polaris 카탈로그 비교](../troubleshooting/reports/hms-vs-polaris.md)
 - **Gatekeeper / OPA 정책 적용** (Trino)
 - **Sealed Secrets** 도입
 - **Cilium v1.18.12 → v1.19.6 업그레이드 영향도 검증**
