@@ -1,0 +1,88 @@
+site_name: ChangBin Yoon | Portfolio
+site_description: 윤창빈의 포트폴리오 - 프로젝트, 경험, 기술 스택을 정리한 공간입니다.
+site_author: ChangBin Yoon
+site_url: https://changbin-yoon.github.io/bychang.github.io/
+
+repo_url: https://github.com/changbin-yoon/bychang.github.io
+repo_name: changbin-yoon/bychang.github.io
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2026 ChangBin Yoon
+
+theme:
+  name: material
+  language: ko
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 홈: index.md
+  - 소개: about.md
+  - 프로젝트:
+      - 개요: projects/index.md
+      - 샘플 프로젝트: projects/sample-project.md
+  - 경험: experience.md
+  - 연락처: contact.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  # lunr는 한국어 형태소 분석을 지원하지 않는다.
+  # 검색 언어는 en으로 두고, 한글 토큰이 끊기지 않도록 구분자만 조정한다.
+  - search:
+      lang:
+        - en
+      separator: '[\s\-,:!=\[\]()"/]+'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/changbin-yoon
+      name: GitHub
+    - icon: fontawesome/solid/envelope
+      link: mailto:hsycb3650@gmail.com
+      name: Email
