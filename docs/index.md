@@ -2,12 +2,20 @@
 title: 홈
 ---
 
-# ChangBin Yoon
+# 윤창빈 · Data Platform Infra Engineer
 
-> 이 사이트는 **포트폴리오 목적**으로 운영되는 개인 프로젝트 저장소입니다.
-> 지금까지 진행한 프로젝트와 경험, 기술 스택을 한곳에 정리합니다.
+> 온프레미스 하둡 빅데이터 클러스터의 구축·운영 경험을 바탕으로,
+> **Kubernetes 기반 차세대 데이터 플랫폼(Lakehouse / DataOps) 전환**을 수행하고 있는 인프라 엔지니어입니다.
 
-## 이 사이트는
+스토리지, 쿼리 엔진, 메타데이터를 아우르는 인프라 전반을 직접 구축·검증했고, ArgoCD 기반 GitOps와 Airflow / Spark Operator를 통한 배포·운영 자동화 체계를 확립했습니다. 반도체 제조(Fab) 데이터의 성능·가용성 확보를 위한 성능 테스트와 장애 대응이 강점입니다.
+
+## 핵심 요약
+
+- **T-Hadoop(온프레미스 빅데이터) → K8s 기반 Lakehouse / DataOps 전환** 프로젝트에 참여해 스토리지, 쿼리 엔진, 메타데이터, 배포 자동화 전반을 담당
+- **Hadoop 클러스터 수백 대 운영·서버 교체·장애 대응**, 신규 K8s 데이터플랫폼(dev/stg/prd/storage) Kubespray 구축 및 **ArgoCD 기반 GitOps 배포 체계 확립**
+- Storage(Isilon / Ceph / MinIO·AIStor), 쿼리 엔진(Trino / Spark / StarRocks), 메타스토어(HMS / Polaris), Kafka 등 **비교·도입 평가(PoC)와 성능 테스트 다수 수행**
+
+## 둘러보기
 
 <div class="grid cards" markdown>
 
@@ -15,37 +23,36 @@ title: 홈
 
     ---
 
-    어떤 일을 해왔고, 무엇에 관심이 있는지 정리했습니다.
+    프로필, 학력, 보유 기술 상세.
+
+-   :material-briefcase: **[경력](experience.md)**
+
+    ---
+
+    미리비트(2020.04~현재), 커미조아(2017.05~2019.10).
 
 -   :material-folder-multiple: **[프로젝트](projects/index.md)**
 
     ---
 
-    직접 만들고 운영한 프로젝트들의 배경, 역할, 결과를 담았습니다.
+    대표 프로젝트 7건의 배경·역할·결과.
 
--   :material-briefcase: **[경험](experience.md)**
-
-    ---
-
-    업무 경력과 담당했던 역할을 시간순으로 정리했습니다.
-
--   :material-email: **[연락처](contact.md)**
+-   :material-alert-decagram: **[이슈 해결](troubleshooting.md)**
 
     ---
 
-    협업이나 문의는 이곳을 통해 연락 주세요.
+    장애·성능 이슈의 원인 규명과 조치 사례.
 
 </div>
 
-## 기술 스택
+## 직무 요약
 
-| 분류 | 기술 |
+| 영역 | 주요 기술 |
 | --- | --- |
-| 언어 | *작성 예정* |
-| 백엔드 | *작성 예정* |
-| 프론트엔드 | *작성 예정* |
-| 인프라 / DevOps | *작성 예정* |
-| 데이터베이스 | *작성 예정* |
-
-!!! note "작성 중"
-    각 페이지의 내용은 계속 채워 나가고 있습니다. 문서를 수정하면 GitHub Actions가 자동으로 빌드·배포합니다.
+| 인프라 / 클러스터 | Kubernetes(Kubespray, RKE2), Cilium, Helm, Kustomize, ArgoCD(GitOps), Linux(RHEL) |
+| 데이터 플랫폼 | Trino, Apache Spark, Hive/HMS, StarRocks, Apache Ignite, Kafka, Airflow |
+| 스토리지 | Ceph(Rook, Baremetal), Isilon(CSI-NFS), MinIO/AIStor(DirectPV), HDFS, S3A |
+| 데이터 카탈로그 / 포맷 | Iceberg, HMS, Gravitino, Polaris, ORC, Parquet |
+| 보안 / 인가 | OPA/Gatekeeper, LDAP, Sealed Secrets, Hadoop jceks |
+| 모니터링 | Prometheus, Grafana, JMX, OpenSearch, Zabbix, Metatron |
+| 언어 / 도구 | Shell, Python, SQL, Ansible, fio / JMeter / Locust |

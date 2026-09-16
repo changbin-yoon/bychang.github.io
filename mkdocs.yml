@@ -1,5 +1,5 @@
 site_name: ChangBin Yoon | Portfolio
-site_description: 윤창빈의 포트폴리오 - 프로젝트, 경험, 기술 스택을 정리한 공간입니다.
+site_description: 윤창빈(ChangBin Yoon) 포트폴리오 - 데이터 플랫폼 인프라 엔지니어. Kubernetes 기반 Lakehouse/DataOps 전환, Trino/Spark/Iceberg, 스토리지 검증 경험.
 site_author: ChangBin Yoon
 site_url: https://changbin-yoon.github.io/bychang.github.io/
 
@@ -45,10 +45,17 @@ theme:
 nav:
   - 홈: index.md
   - 소개: about.md
+  - 경력: experience.md
   - 프로젝트:
       - 개요: projects/index.md
-      - 샘플 프로젝트: projects/sample-project.md
-  - 경험: experience.md
+      - Kubernetes 데이터플랫폼: projects/kubernetes-platform.md
+      - Query Engine: projects/query-engine.md
+      - 스토리지: projects/storage.md
+      - 메타데이터(HMS): projects/metastore.md
+      - 배포 자동화: projects/automation.md
+      - T-Hadoop 레거시: projects/hadoop-legacy.md
+      - 신기술 PoC·문서화: projects/poc-and-docs.md
+  - 이슈 해결: troubleshooting.md
   - 연락처: contact.md
 
 markdown_extensions:

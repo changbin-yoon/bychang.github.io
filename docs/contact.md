@@ -10,5 +10,5 @@ title: 연락처
 - :fontawesome-brands-github: **GitHub** — [@changbin-yoon](https://github.com/changbin-yoon)
 
 !!! tip "이 사이트에 대해"
-    이 사이트는 MkDocs Material로 작성되어 GitHub Actions를 통해 GitHub Pages에 자동 배포됩니다.
-    오탈자나 개선 제안은 각 페이지 우측 상단의 편집 아이콘을 통해 남겨주셔도 됩니다.
+    MkDocs Material로 작성되어 GitHub Actions를 통해 GitHub Pages에 자동 배포됩니다.
+    문서를 수정해 `main`에 push하면 빌드·배포가 자동으로 수행됩니다.

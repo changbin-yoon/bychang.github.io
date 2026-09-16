@@ -27,11 +27,12 @@ https://changbin-yoon.github.io/bychang.github.io/
 │   ├── ci.yml          # PR·기능 브랜치 빌드 검증
 │   └── deploy.yml      # main 브랜치 → GitHub Pages 배포
 ├── docs/
-│   ├── index.md        # 홈
-│   ├── about.md        # 소개
-│   ├── experience.md   # 경험
-│   ├── contact.md      # 연락처
-│   └── projects/       # 프로젝트 문서
+│   ├── index.md            # 홈 (핵심 요약·기술 스택)
+│   ├── about.md            # 소개 (프로필·학력·보유 기술)
+│   ├── experience.md       # 경력 (미리비트·커미조아)
+│   ├── troubleshooting.md  # 이슈 해결 사례
+│   ├── contact.md          # 연락처
+│   └── projects/           # 대표 프로젝트 7건
 ├── mkdocs.yml          # 사이트 설정
 └── requirements.txt    # Python 의존성
 ```
