@@ -8,7 +8,7 @@
 
 ## 사이트 주소
 
-https://changbin-yoon.github.io/
+https://changbin-yoon.github.io/portfolio/
 
 ## 기술 구성
 

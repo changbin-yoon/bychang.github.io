@@ -8,6 +8,7 @@ title: 연락처
 
 - :material-email: **Email** — [hsycb3650@gmail.com](mailto:hsycb3650@gmail.com)
 - :fontawesome-brands-github: **GitHub** — [@changbin-yoon](https://github.com/changbin-yoon)
+- :material-post-outline: **Blog** — [changby-cns.tistory.com](https://changby-cns.tistory.com/)
 
 !!! tip "이 사이트에 대해"
     MkDocs Material로 작성되어 GitHub Actions를 통해 GitHub Pages에 자동 배포됩니다.

@@ -38,13 +38,18 @@ jobs:
       - name: 사이트 빌드
         run: mkdocs build --strict
 
+      - name: /portfolio 하위 경로로 재배치
+        run: |
+          mkdir -p publish/portfolio
+          cp -r site/. publish/portfolio/
+
       - name: Pages 설정
         uses: actions/configure-pages@v5
 
       - name: 아티팩트 업로드
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/
+          path: publish/
 
   deploy:
     name: 배포

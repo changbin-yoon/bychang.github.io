@@ -35,4 +35,4 @@ expire_snapshots
 
 ## 장애 대응
 
-- **HMS Oracle DB 장애 대응 (2026.05)** 및 장애 보고서 작성 — 상세: [이슈 해결](../troubleshooting.md)
+- **HMS Oracle DB 장애 대응 (2026.05)** 및 장애 보고서 작성 — 상세: [트러블슈팅](../troubleshooting/index.md)

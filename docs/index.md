@@ -19,13 +19,13 @@ title: 홈
 
 <div class="grid cards" markdown>
 
--   :material-account-circle: **[소개](about.md)**
+-   :material-account-circle: **[소개](about/index.md)**
 
     ---
 
     프로필, 학력, 보유 기술 상세.
 
--   :material-briefcase: **[경력](experience.md)**
+-   :material-briefcase: **[경력](experience/index.md)**
 
     ---
 
@@ -37,7 +37,7 @@ title: 홈
 
     대표 프로젝트 7건의 배경·역할·결과.
 
--   :material-alert-decagram: **[이슈 해결](troubleshooting.md)**
+-   :material-alert-decagram: **[트러블슈팅](troubleshooting/index.md)**
 
     ---
 

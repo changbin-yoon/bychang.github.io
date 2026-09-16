@@ -10,7 +10,7 @@ title: 커미조아
 
 ## 1. 반도체 / 디스플레이 물류 자동화 장비 제어 (Firmware)
 
-- **SEMES OHT(Overhead Hoist Transport) Display 모듈 개발**
+- **S사 OHT(Overhead Hoist Transport) Display 모듈 개발**
 - Wafer Lot 변경 장비 알고리즘 및 Display 모듈 개발
 - 장비 메인 제어부 및 사용자 인터페이스용 **LCD 모듈 펌웨어 설계·구현**
 - 실시간 데이터 처리 및 장비 상태 모니터링 로직 최적화

@@ -13,7 +13,7 @@ title: 트러블슈팅
 
     ---
 
-    클러스터·네트워크·스케줄러 계층. Cilium BGP/ClusterMesh, YuniKorn, API 서버 부하 등 10건.
+    클러스터·네트워크·스케줄러 계층. Cilium BGP/ClusterMesh, YuniKorn, API 서버 부하 등 9건.
 
 -   :material-cog-outline: **[Kubernetes Service](kubernetes-service/index.md)**
 

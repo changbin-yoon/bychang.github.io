@@ -1,7 +1,7 @@
 site_name: ChangBin Yoon | Portfolio
 site_description: 윤창빈(ChangBin Yoon) 포트폴리오 - 데이터 플랫폼 인프라 엔지니어. Kubernetes 기반 Lakehouse/DataOps 전환, Trino/Spark/Iceberg, 스토리지 검증 경험.
 site_author: ChangBin Yoon
-site_url: https://changbin-yoon.github.io/
+site_url: https://changbin-yoon.github.io/portfolio/
 
 repo_url: https://github.com/changbin-yoon/changbin-yoon.github.io
 repo_name: changbin-yoon.github.io
@@ -44,8 +44,11 @@ theme:
 
 nav:
   - 홈: index.md
-  - 소개: about.md
-  - 경력: experience.md
+  - 소개: about/index.md
+  - 경력:
+      - 개요: experience/index.md
+      - 미리비트: experience/miribit.md
+      - 커미조아: experience/commizoa.md
   - 프로젝트:
       - 개요: projects/index.md
       - Kubernetes 데이터플랫폼: projects/kubernetes-platform.md
@@ -55,8 +58,40 @@ nav:
       - 배포 자동화: projects/automation.md
       - T-Hadoop 레거시: projects/hadoop-legacy.md
       - 신기술 PoC·문서화: projects/poc-and-docs.md
-  - 이슈 해결: troubleshooting.md
-  - 연락처: contact.md
+  - 트러블슈팅:
+      - 개요: troubleshooting/index.md
+      - 요약: troubleshooting/summary.md
+      - Kubernetes Infra:
+          - 개요: troubleshooting/kubernetes-infra/index.md
+          - 01. 클러스터 구축·운영 도구: troubleshooting/kubernetes-infra/01-cluster-tooling.md
+          - 02. Cilium BGP & ClusterMesh: troubleshooting/kubernetes-infra/02-cilium-bgp-clustermesh.md
+          - 03. Cilium 1.18→1.19 업그레이드: troubleshooting/kubernetes-infra/03-cilium-upgrade.md
+          - 04. YuniKorn Gang Scheduling: troubleshooting/kubernetes-infra/04-yunikorn-gang-scheduling.md
+          - 05. API 서버 부하 & Watch 레이스: troubleshooting/kubernetes-infra/05-apiserver-watch-race.md
+          - 06. Prometheus 모니터링: troubleshooting/kubernetes-infra/06-prometheus.md
+          - 07. ClusterMesh PodCIDR 라우팅 누락: troubleshooting/kubernetes-infra/07-clustermesh-podcidr.md
+          - 08. Geneve 터널 라우팅: troubleshooting/kubernetes-infra/08-geneve-routing.md
+          - 09. PodCIDR 경로 누락 (미확정): troubleshooting/kubernetes-infra/09-podcidr-missing-routes.md
+      - Kubernetes Service:
+          - 개요: troubleshooting/kubernetes-service/index.md
+          - 01. Spark Operator HA: troubleshooting/kubernetes-service/01-spark-operator-ha.md
+          - 02. Spark × YuniKorn 지연 진단: troubleshooting/kubernetes-service/02-spark-yunikorn-delay.md
+          - 03. Airflow 3.x 운영: troubleshooting/kubernetes-service/03-airflow-3x.md
+          - 04. CNPG & Cilium 업그레이드: troubleshooting/kubernetes-service/04-cnpg-cilium.md
+          - 05. n8n 모니터링 자동화: troubleshooting/kubernetes-service/05-n8n-monitoring.md
+      - Storage (AIStor/MinIO):
+          - 개요: troubleshooting/storage-aistor/index.md
+          - 01. LDAP IAM: troubleshooting/storage-aistor/01-ldap-iam.md
+          - 02. 고사용률 구간 동작: troubleshooting/storage-aistor/02-capacity.md
+          - 03. 트래픽 분산 경로(L4 vs L7): troubleshooting/storage-aistor/03-network-l4-l7.md
+          - 04. Kafka 이벤트/파이프라인: troubleshooting/storage-aistor/04-kafka-events.md
+          - 05. DirectPV/Sidekick 배치: troubleshooting/storage-aistor/05-directpv-sidekick.md
+          - 06. OpenSearch 스냅샷 리포지토리: troubleshooting/storage-aistor/06-opensearch-snapshot.md
+          - 07. StarRocks/Spark/Iceberg/HMS 연동: troubleshooting/storage-aistor/07-query-engine.md
+          - 08. DirectPV Erasure Set 쓰기 차단: troubleshooting/storage-aistor/08-directpv-erasure-set.md
+      - 검증 보고서:
+          - 개요: troubleshooting/reports/index.md
+  - 연락처: contact/index.md
 
 markdown_extensions:
   - admonition
@@ -93,3 +128,6 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:hsycb3650@gmail.com
       name: Email
+    - icon: fontawesome/solid/blog
+      link: https://changby-cns.tistory.com/
+      name: Blog
