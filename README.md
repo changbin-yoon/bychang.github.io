@@ -28,11 +28,15 @@ https://changbin-yoon.github.io/portfolio/
 │   └── deploy.yml      # main 브랜치 → GitHub Pages 배포
 ├── docs/
 │   ├── index.md            # 홈 (핵심 요약·기술 스택)
-│   ├── about.md            # 소개 (프로필·학력·보유 기술)
-│   ├── experience.md       # 경력 (미리비트·커미조아)
-│   ├── troubleshooting.md  # 이슈 해결 사례
-│   ├── contact.md          # 연락처
-│   └── projects/           # 대표 프로젝트 7건
+│   ├── about/              # 소개 (프로필·학력·보유 기술)
+│   ├── experience/         # 경력 (미리비트·커미조아)
+│   ├── projects/           # 대표 프로젝트 7건
+│   ├── work/               # 업무내역 — 조사 기록 25건
+│   │   ├── index.md            # 분류 요약
+│   │   ├── troubleshooting/    # 장애·증상 대응 9건
+│   │   ├── poc/                # 도입·구성 검토 5건
+│   │   └── verification/       # 동작·성능·비교 검증 11건
+│   └── contact/            # 연락처
 ├── mkdocs.yml          # 사이트 설정
 └── requirements.txt    # Python 의존성
 ```

@@ -9,7 +9,7 @@ title: 09. 190노드 중 3노드 PodCIDR 경로 누락
     아래는 재현 가능한 **가설과 공개 사례**입니다.
 
 !!! warning "가장 중요한 선결 확인"
-    기존 내부 기록 [07번](07-clustermesh-podcidr.md), [08번](08-geneve-routing.md)은 해당 190노드 환경을 **Geneve 터널 + DSR** 로 적었습니다.
+    기존 내부 기록 [ClusterMesh PodCIDR 라우팅 누락](03-clustermesh-podcidr.md), [Geneve 터널 라우팅 검증](../verification/04-geneve-routing.md)은 해당 190노드 환경을 **Geneve 터널 + DSR** 로 적었습니다.
     이 기록이 현재 환경에도 맞다면 **원격 PodCIDR의 Linux 경로가 없는 것만으로는 장애 원인이라고 결론 낼 수 없습니다.** native routing 전제 설명은 조건부로 읽어야 합니다.
 
 ## 구성 구조

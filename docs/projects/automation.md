@@ -28,4 +28,4 @@ title: 배포 자동화 · 커스텀 개발
 
 - Spark WorkDir 정리 **CronJob**
 - 팀별 ServiceAccount 기반 **Kubeconfig 생성**
-- **Spark Operator 모니터링** — Prometheus 메트릭, 알람 규칙 개발. 소스 레벨 운영 분석: [Kubeflow Spark Operator 운영 분석](../troubleshooting/reports/kubeflow-spark-operator.md)
+- **Spark Operator 모니터링** — Prometheus 메트릭, 알람 규칙 개발. 소스 레벨 운영 분석: [Kubeflow Spark Operator 운영 분석](../work/verification/09-kubeflow-spark-operator-report.md)

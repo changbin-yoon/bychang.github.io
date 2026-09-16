@@ -46,7 +46,7 @@ SparkApplication 제출 → apiserver 저장(수동적) → YuniKorn watch 감�
 
 1. **즉시 — 필터링** — OpenSearch 모니터에서 `token not found` + `tg-` 패턴, `conf-map not found` + driver 삭제됨 패턴 제외. bucket-level monitor로 동일 pod 반복(stale state) 감지는 유지
 2. **보완 알람** — `ContainerCreating` 5분+ 정체 알람으로 **진짜 마운트 장애**를 별도 커버
-3. **발생량 감소(선택)** — `gangSchedulingStyle=Soft`, `placeholderTimeoutInSeconds` 실측 기반 상향, executor `terminationGracePeriodSeconds: 10` (conntrack 이슈와 동시 완화 — [04번 문서](04-yunikorn-gang-scheduling.md) 참고)
+3. **발생량 감소(선택)** — `gangSchedulingStyle=Soft`, `placeholderTimeoutInSeconds` 실측 기반 상향, executor `terminationGracePeriodSeconds: 10` (conntrack 이슈와 동시 완화 — [01번 문서](01-yunikorn-conntrack.md) 참고)
 4. **부하 튜닝(근거 확보 시에만)** — kubelet `kubeAPIQPS` 상향 → apiserver inflight → Spark 트래픽 FlowSchema 격리 순
 
 ## apiserver 인증서 만료 알람 (별개 사례)

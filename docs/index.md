@@ -37,11 +37,11 @@ title: 홈
 
     대표 프로젝트 7건의 배경·역할·결과.
 
--   :material-alert-decagram: **[트러블슈팅](troubleshooting/index.md)**
+-   :material-alert-decagram: **[업무내역](work/index.md)**
 
     ---
 
-    장애·성능 이슈의 원인 규명과 조치 사례.
+    트러블슈팅 · PoC · 검증으로 분류한 조사 기록 25건.
 
 </div>
 

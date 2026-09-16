@@ -12,7 +12,7 @@ title: 메타데이터(HMS) 관리·모니터링
 
 ## Hive Metastore 구축·운영
 
-- **Oracle DB 기반** HMS 구축 및 운영 — 버전 검증 보고서: [Oracle 21c/26ai HMS 스키마 검증](../troubleshooting/reports/oracle-hms-schema.md)
+- **Oracle DB 기반** HMS 구축 및 운영 — 버전 검증 보고서: [Oracle 21c/26ai HMS 스키마 검증](../work/verification/10-oracle-hms-schema.md)
 - **Hive-Metastore Hook** 적용
 - AIStor 연동
 
@@ -35,4 +35,4 @@ expire_snapshots
 
 ## 장애 대응
 
-- **HMS Oracle DB 장애 대응 (2026.05)** 및 장애 보고서 작성 — 상세: [트러블슈팅](../troubleshooting/index.md)
+- **HMS Oracle DB 장애 대응 (2026.05)** 및 장애 보고서 작성 — 상세: [업무내역 요약](../work/index.md)

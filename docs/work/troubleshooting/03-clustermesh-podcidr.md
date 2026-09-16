@@ -10,7 +10,7 @@ title: 07. ClusterMesh 신규 PodCIDR 라우팅 누락
 
 !!! warning "보완 필요"
     이후 확인 결과, 이 클러스터는 **Geneve 터널 모드 + DSR 구성**입니다. 터널 모드에서는 원격 PodCIDR이 커널 FIB에 없어도 정상이므로, 아래 BGP 전파 중심의 원인 분석은 **전제부터 재검토가 필요**합니다.
-    상세는 [08번 문서](08-geneve-routing.md) 참고.
+    상세는 [Geneve 터널 라우팅 검증](../verification/04-geneve-routing.md) 참고.
 
 ## 증상 — 같은 명령이 될 때도, 안 될 때도
 
@@ -20,7 +20,7 @@ title: 07. ClusterMesh 신규 PodCIDR 라우팅 누락
 
 ## 구성 전제 — BGP는 데이터 플레인, ClusterMesh는 컨트롤 플레인
 
-계층 구분은 [02. 네트워크 — Cilium BGP Control Plane & ClusterMesh](02-cilium-bgp-clustermesh.md)에 정리한 그대로입니다. 이번 건은 그 구분이 **실제 장애로 드러난 사례**입니다.
+계층 구분은 [Cilium BGP Control Plane & ClusterMesh 검증](../verification/01-cilium-bgp-clustermesh.md)에 정리한 그대로입니다. 이번 건은 그 구분이 **실제 장애로 드러난 사례**입니다.
 
 이번 건과 직접 관련된 구성 특성은 세 가지입니다.
 

@@ -6,7 +6,7 @@ title: 04. CNPG & Cilium 업그레이드 영향
 
 !!! abstract "요약"
     Cilium 롤링 업그레이드 중 CNPG(CloudNativePG) 파드가 재시작된 문제를 진단하고 대응한 기록.
-    자세한 Cilium 업그레이드 절차는 [Kubernetes Infra 03번 문서](../kubernetes-infra/03-cilium-upgrade.md)를 참조.
+    자세한 Cilium 업그레이드 절차는 [Cilium 1.18 → 1.19 무중단 업그레이드](../verification/02-cilium-upgrade.md)를 참조.
 
 ## 문제 현상
 

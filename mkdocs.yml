@@ -51,42 +51,36 @@ nav:
       - 배포 자동화: projects/automation.md
       - T-Hadoop 레거시: projects/hadoop-legacy.md
       - 신기술 PoC·문서화: projects/poc-and-docs.md
-  - 트러블슈팅:
-      - 개요: troubleshooting/index.md
-      - 요약: troubleshooting/summary.md
-      - Kubernetes Infra:
-          - 개요: troubleshooting/kubernetes-infra/index.md
-          - 01. 클러스터 구축·운영 도구: troubleshooting/kubernetes-infra/01-cluster-tooling.md
-          - 02. Cilium BGP & ClusterMesh: troubleshooting/kubernetes-infra/02-cilium-bgp-clustermesh.md
-          - 03. Cilium 1.18→1.19 업그레이드: troubleshooting/kubernetes-infra/03-cilium-upgrade.md
-          - 04. YuniKorn Gang Scheduling: troubleshooting/kubernetes-infra/04-yunikorn-gang-scheduling.md
-          - 05. API 서버 부하 & Watch 레이스: troubleshooting/kubernetes-infra/05-apiserver-watch-race.md
-          - 06. Prometheus 모니터링: troubleshooting/kubernetes-infra/06-prometheus.md
-          - 07. ClusterMesh PodCIDR 라우팅 누락: troubleshooting/kubernetes-infra/07-clustermesh-podcidr.md
-          - 08. Geneve 터널 라우팅: troubleshooting/kubernetes-infra/08-geneve-routing.md
-          - 09. PodCIDR 경로 누락 (미확정): troubleshooting/kubernetes-infra/09-podcidr-missing-routes.md
-      - Kubernetes Service:
-          - 개요: troubleshooting/kubernetes-service/index.md
-          - 01. Spark Operator HA: troubleshooting/kubernetes-service/01-spark-operator-ha.md
-          - 02. Spark × YuniKorn 지연 진단: troubleshooting/kubernetes-service/02-spark-yunikorn-delay.md
-          - 03. Airflow 3.x 운영: troubleshooting/kubernetes-service/03-airflow-3x.md
-          - 04. CNPG & Cilium 업그레이드: troubleshooting/kubernetes-service/04-cnpg-cilium.md
-          - 05. n8n 모니터링 자동화: troubleshooting/kubernetes-service/05-n8n-monitoring.md
-      - Storage (AIStor/MinIO):
-          - 개요: troubleshooting/storage-aistor/index.md
-          - 01. LDAP IAM: troubleshooting/storage-aistor/01-ldap-iam.md
-          - 02. 고사용률 구간 동작: troubleshooting/storage-aistor/02-capacity.md
-          - 03. 트래픽 분산 경로(L4 vs L7): troubleshooting/storage-aistor/03-network-l4-l7.md
-          - 04. Kafka 이벤트/파이프라인: troubleshooting/storage-aistor/04-kafka-events.md
-          - 05. DirectPV/Sidekick 배치: troubleshooting/storage-aistor/05-directpv-sidekick.md
-          - 06. OpenSearch 스냅샷 리포지토리: troubleshooting/storage-aistor/06-opensearch-snapshot.md
-          - 07. StarRocks/Spark/Iceberg/HMS 연동: troubleshooting/storage-aistor/07-query-engine.md
-          - 08. DirectPV Erasure Set 쓰기 차단: troubleshooting/storage-aistor/08-directpv-erasure-set.md
-      - 검증 보고서:
-          - 개요: troubleshooting/reports/index.md
-          - Kubeflow Spark Operator 운영 분석: troubleshooting/reports/kubeflow-spark-operator.md
-          - Oracle 21c/26ai HMS 스키마 검증: troubleshooting/reports/oracle-hms-schema.md
-          - HMS vs Polaris 카탈로그 비교: troubleshooting/reports/hms-vs-polaris.md
+  - 업무내역:
+      - 요약: work/index.md
+      - 트러블슈팅:
+          - 01. YuniKorn Gang Scheduling과 conntrack 부하: work/troubleshooting/01-yunikorn-conntrack.md
+          - 02. API 서버 부하 & Watch 레이스: work/troubleshooting/02-apiserver-watch-race.md
+          - 03. ClusterMesh 신규 PodCIDR 라우팅 누락: work/troubleshooting/03-clustermesh-podcidr.md
+          - 04. 190노드 중 3노드 PodCIDR 경로 누락: work/troubleshooting/04-podcidr-missing-routes.md
+          - 05. Spark × YuniKorn 작업 지연: work/troubleshooting/05-spark-yunikorn-delay.md
+          - 06. Airflow 3.x 운영: work/troubleshooting/06-airflow-3x.md
+          - 07. CNPG & Cilium 업그레이드 영향: work/troubleshooting/07-cnpg-cilium.md
+          - 08. OpenSearch 스냅샷 리포지토리: work/troubleshooting/08-opensearch-snapshot.md
+          - 09. DirectPV Erasure Set 쓰기 차단: work/troubleshooting/09-directpv-erasure-set.md
+      - PoC:
+          - 01. 클러스터 구축·운영 도구: work/poc/01-cluster-tooling.md
+          - 02. n8n 기반 모니터링 자동화: work/poc/02-n8n-monitoring.md
+          - 03. Kafka 이벤트 파이프라인: work/poc/03-kafka-events.md
+          - 04. DirectPV · Sidekick 배치 방식: work/poc/04-directpv-sidekick.md
+          - 05. StarRocks / Spark · Iceberg · HMS 연동: work/poc/05-query-engine.md
+      - 검증:
+          - 01. Cilium BGP Control Plane & ClusterMesh: work/verification/01-cilium-bgp-clustermesh.md
+          - 02. Cilium 1.18 → 1.19 무중단 업그레이드: work/verification/02-cilium-upgrade.md
+          - 03. Prometheus Agent 모드: work/verification/03-prometheus.md
+          - 04. Geneve 터널과 커널 라우팅: work/verification/04-geneve-routing.md
+          - 05. Spark Operator HA & 리더 일렉션: work/verification/05-spark-operator-ha.md
+          - 06. LDAP 연동 Access Key 권한 전파: work/verification/06-ldap-iam.md
+          - 07. 고사용률 구간 동작: work/verification/07-capacity.md
+          - 08. 트래픽 분산 경로 (L4 vs L7): work/verification/08-network-l4-l7.md
+          - 09. Kubeflow Spark Operator 운영 분석 보고서: work/verification/09-kubeflow-spark-operator-report.md
+          - 10. Oracle 21c/26ai HMS 스키마 검증: work/verification/10-oracle-hms-schema.md
+          - 11. HMS vs Polaris 카탈로그 비교: work/verification/11-hms-vs-polaris.md
   - 연락처: contact/index.md
 
 markdown_extensions:

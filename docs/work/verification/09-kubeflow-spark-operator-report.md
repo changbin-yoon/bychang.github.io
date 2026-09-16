@@ -9,7 +9,7 @@ title: Kubeflow Spark Operator 운영 분석 보고서
 
     **분석 기준** — kubeflow/spark-operator master(2026-08), controller-runtime v0.23.3, client-go v0.35.0 소스 코드를 직접 확인한 내용. 버전에 따라 파일 위치와 기본값이 다를 수 있음.
 
-이 보고서는 [Kubernetes Service 01번 문서](../kubernetes-service/01-spark-operator-ha.md)의 조사를 바탕으로, 실제 운영 이슈 3건의 근본 원인 분석과 튜닝 가이드까지 종합한 최종 보고서입니다.
+이 보고서는 [Spark Operator HA & 리더 일렉션](05-spark-operator-ha.md)의 조사를 바탕으로, 실제 운영 이슈 3건의 근본 원인 분석과 튜닝 가이드까지 종합한 최종 보고서입니다.
 
 ## 1. 요약 (TL;DR)
 
@@ -243,7 +243,7 @@ Airflow ──(CR 생성/폴링)──▶ kube-apiserver ◀──(watch/reconci
 driver Completed 후 Sidekick sidecar가 안 죽는 문제. `spec.driver.sidecars` 는 pod의 `spec.containers` 로 들어가 main 종료 후에도 K8s가 죽여주지 않습니다.
 
 - **1차 해결** — native sidecar 패턴 — `initContainers` + `restartPolicy: Always` (spark-operator PR #2022, K8s 1.29+ SidecarContainers). driver 종료 시 kubelet이 SIGTERM 자동 전송.
-- **최종 아키텍처** — Sidekick을 **standalone DaemonSet** 으로 분리 + Service `internalTrafficPolicy: Local`. 같은 노드의 Sidekick pod로만 라우팅해 data locality를 유지하면서 pod lifecycle 결합을 제거. 상세: [Storage 05번 문서](../storage-aistor/05-directpv-sidekick.md)
+- **최종 아키텍처** — Sidekick을 **standalone DaemonSet** 으로 분리 + Service `internalTrafficPolicy: Local`. 같은 노드의 Sidekick pod로만 라우팅해 data locality를 유지하면서 pod lifecycle 결합을 제거. 상세: [DirectPV · Sidekick 배치 방식](../poc/04-directpv-sidekick.md)
 
 ## 10. 부록 C — 진단 쿼리 치트시트
 

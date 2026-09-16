@@ -71,7 +71,7 @@ updateStrategy:
 
 **원인** — CNPG instance manager의 liveness probe가 API 서버 isolation check를 포함하는데, kube-proxy replacement 환경에서는 ClusterIP 해석이 Cilium eBPF에 의존하므로 **Cilium agent 재시작 중 짧게 실패** → kubelet이 컨테이너를 재시작.
 
-**대응** — probe 완화 또는 업그레이드 윈도우 동안 fencing. 상세: [Kubernetes Service 04번 문서](../kubernetes-service/04-cnpg-cilium.md)
+**대응** — probe 완화 또는 업그레이드 윈도우 동안 fencing. 상세: [CNPG & Cilium 업그레이드 영향](../troubleshooting/07-cnpg-cilium.md)
 
 ## 핵심 결론
 

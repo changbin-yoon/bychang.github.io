@@ -53,4 +53,4 @@ decommission을 켜더라도 shuffle 마이그레이션이 grace period(기본 3
 
 conntrack 누수는 **네트워크 계층(Cilium) 증상으로 보이지만, 근본 원인은 워크로드 계층(Spark decommission 미설정 + grace period 0)** 에 있는 전형적 사례입니다.
 
-인프라 증상과 서비스 원인이 분리되는 이 패턴이 반복적으로 나타납니다 — [Kubernetes Service](../kubernetes-service/index.md) 문서와 함께 볼 것.
+인프라 증상과 서비스 원인이 분리되는 이 패턴이 반복적으로 나타납니다 — [Spark × YuniKorn 작업 지연](05-spark-yunikorn-delay.md) 문서와 함께 볼 것.
