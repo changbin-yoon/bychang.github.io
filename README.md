@@ -1,14 +1,14 @@
-# bychang.github.io
+# changbin-yoon.github.io
 
 > **이 저장소는 포트폴리오(Portfolio)를 위한 개인 프로젝트입니다.**
 > 진행한 프로젝트, 업무 경험, 기술 스택을 정리해 웹사이트로 공개하는 것이 목적입니다.
 
-[![CI](https://github.com/changbin-yoon/bychang.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/changbin-yoon/bychang.github.io/actions/workflows/ci.yml)
-[![Deploy](https://github.com/changbin-yoon/bychang.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/changbin-yoon/bychang.github.io/actions/workflows/deploy.yml)
+[![CI](https://github.com/changbin-yoon/changbin-yoon.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/changbin-yoon/changbin-yoon.github.io/actions/workflows/ci.yml)
+[![Deploy](https://github.com/changbin-yoon/changbin-yoon.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/changbin-yoon/changbin-yoon.github.io/actions/workflows/deploy.yml)
 
 ## 사이트 주소
 
-https://changbin-yoon.github.io/bychang.github.io/
+https://changbin-yoon.github.io/
 
 ## 기술 구성
 
