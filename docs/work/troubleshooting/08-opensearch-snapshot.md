@@ -1,5 +1,5 @@
 ---
-title: 06. 연동 시스템 — OpenSearch 스냅샷 리포지토리
+title: 08. OpenSearch 스냅샷 리포지토리 운영
 ---
 
 # 🗃️ 연동 시스템 — OpenSearch 스냅샷 리포지토리 운영

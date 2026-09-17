@@ -1,5 +1,5 @@
 ---
-title: 03. Airflow 3.x 운영
+title: 06. Airflow 3.x 운영
 ---
 
 # 🌬️ Airflow 3.x 운영 — dag-processor, git-sync, Celery/Redis

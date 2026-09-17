@@ -1,5 +1,5 @@
 ---
-title: 05. n8n 기반 K8s 모니터링 자동화
+title: 02. n8n 기반 K8s 모니터링 자동화
 ---
 
 # 🤖 n8n 기반 Kubernetes 모니터링 자동화

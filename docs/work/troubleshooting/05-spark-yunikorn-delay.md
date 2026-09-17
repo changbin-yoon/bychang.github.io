@@ -1,5 +1,5 @@
 ---
-title: 02. Spark × YuniKorn 작업 지연 진단
+title: 05. Spark × YuniKorn 작업 지연 진단
 ---
 
 # ⏱️ Spark × YuniKorn 작업 지연 진단 — SUBMITTED→RUNNING

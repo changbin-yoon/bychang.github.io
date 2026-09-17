@@ -1,5 +1,5 @@
 ---
-title: 05. 구성 컴포넌트 — DirectPV·Sidekick
+title: 04. DirectPV · Sidekick 배치 방식
 ---
 
 # 🧱 구성 컴포넌트 — DirectPV · Sidekick 배치 방식

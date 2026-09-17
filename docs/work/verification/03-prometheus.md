@@ -1,5 +1,5 @@
 ---
-title: 06. Prometheus Agent 모드, RBAC, 멀티클러스터
+title: 03. Prometheus Agent 모드, RBAC, 멀티클러스터
 ---
 
 # 📊 모니터링 — Prometheus Agent 모드, RBAC, 멀티클러스터

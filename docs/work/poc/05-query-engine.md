@@ -1,5 +1,5 @@
 ---
-title: 07. 쿼리 엔진 — StarRocks/Spark·Iceberg·HMS 연동
+title: 05. StarRocks / Spark · Iceberg · HMS 연동
 ---
 
 # 🔍 쿼리 엔진 — StarRocks / Spark · Iceberg · HMS 연동

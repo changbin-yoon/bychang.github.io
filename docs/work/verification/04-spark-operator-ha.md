@@ -1,5 +1,5 @@
 ---
-title: 01. Spark Operator HA & 리더 일렉션
+title: 04. Spark Operator HA & 리더 일렉션
 ---
 
 # ⚡ Spark Operator HA & 리더 일렉션 — 소스 레벨 분석

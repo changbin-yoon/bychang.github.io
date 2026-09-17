@@ -1,5 +1,5 @@
 ---
-title: 04. CNPG & Cilium 업그레이드 영향
+title: 07. CNPG & Cilium 업그레이드 영향
 ---
 
 # 🐘 CNPG & Cilium 업그레이드 영향 — probe fencing

@@ -1,5 +1,5 @@
 ---
-title: Oracle 21c XE/26ai Free 기반 HMS 스키마 검증
+title: 09. Oracle 21c XE/26ai Free HMS 스키마 검증
 ---
 
 # 🗄️ Oracle 21c XE / 26ai Free 기반 Hive Metastore 스키마 검증 보고서

@@ -1,5 +1,5 @@
 ---
-title: Kubeflow Spark Operator 운영 분석 보고서
+title: 08. Kubeflow Spark Operator 운영 분석 보고서
 ---
 
 # Kubeflow Spark Operator 운영 분석 보고서
@@ -9,7 +9,7 @@ title: Kubeflow Spark Operator 운영 분석 보고서
 
     **분석 기준** — kubeflow/spark-operator master(2026-08), controller-runtime v0.23.3, client-go v0.35.0 소스 코드를 직접 확인한 내용. 버전에 따라 파일 위치와 기본값이 다를 수 있음.
 
-이 보고서는 [Spark Operator HA & 리더 일렉션](05-spark-operator-ha.md)의 조사를 바탕으로, 실제 운영 이슈 3건의 근본 원인 분석과 튜닝 가이드까지 종합한 최종 보고서입니다.
+이 보고서는 [Spark Operator HA & 리더 일렉션](04-spark-operator-ha.md)의 조사를 바탕으로, 실제 운영 이슈 3건의 근본 원인 분석과 튜닝 가이드까지 종합한 최종 보고서입니다.
 
 ## 1. 요약 (TL;DR)
 

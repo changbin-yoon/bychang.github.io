@@ -1,5 +1,5 @@
 ---
-title: HMS(Oracle) vs Apache Polaris(REST) 카탈로그 비교 검증
+title: 10. HMS(Oracle) vs Apache Polaris(REST) 비교 검증
 ---
 
 # 🧊 Hive Metastore(Oracle) vs Apache Polaris(REST) — Iceberg 카탈로그 비교 검증 보고서

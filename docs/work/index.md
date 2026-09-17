@@ -4,13 +4,13 @@ title: 업무내역 요약
 
 # 업무내역 요약
 
-데이터 플랫폼 인프라를 운영하며 남긴 조사·검증 기록 **25건**을 성격에 따라 세 갈래로 분류했습니다.
+데이터 플랫폼 인프라를 운영하며 남긴 조사·검증 기록 **24건**을 성격에 따라 세 갈래로 분류했습니다.
 
 | 분류 | 건수 | 성격 |
 | --- | --- | --- |
 | **[트러블슈팅](#트러블슈팅-9건)** | 9건 | 실제 발생한 장애·증상의 원인을 규명하고 조치한 기록 |
 | **[PoC](#poc-5건)** | 5건 | 신규 도입·구성 방식을 결정하기 위해 직접 구축하고 테스트한 기록 |
-| **[검증](#검증-11건)** | 11건 | 동작 원리·성능·버전 호환성을 사전에 확인하고 근거를 남긴 기록 |
+| **[검증](#검증-10건)** | 10건 | 동작 원리·성능·버전 호환성을 사전에 확인하고 근거를 남긴 기록 |
 
 !!! info "대상 환경"
     베어메탈 Kubernetes 약 190노드(마스터 5 + 워커 ~185, 노드당 96코어 / 1TB), **에어갭** 환경.
@@ -76,7 +76,7 @@ title: 업무내역 요약
 
 ---
 
-## 검증 (11건)
+## 검증 (10건)
 
 장애가 나기 전에, 혹은 도입 결정의 근거를 만들기 위해 **동작 원리와 수치를 확인**한 기록입니다. 소스 코드와 커널 레벨까지 확인한 건들이 여기 속합니다.
 
@@ -85,18 +85,17 @@ title: 업무내역 요약
 | 01 | [Cilium BGP Control Plane & ClusterMesh](verification/01-cilium-bgp-clustermesh.md) | BGP(데이터 플레인)와 ClusterMesh(컨트롤 플레인) 분리, 6계층 검증 체크리스트 |
 | 02 | [Cilium 1.18 → 1.19 무중단 업그레이드](verification/02-cilium-upgrade.md) | breaking change 3건 사전 식별, 카나리 우선 롤링 절차 수립 |
 | 03 | [Prometheus Agent 모드](verification/03-prometheus.md) | 로컬 TSDB 부재가 admin API·규칙 평가·메트릭 삭제에 미치는 영향 |
-| 04 | [Geneve 터널과 커널 라우팅](verification/04-geneve-routing.md) | RIB/FIB 구분 — 터널 모드에서 원격 PodCIDR이 FIB에 없어도 정상임을 확인 |
-| 05 | [Spark Operator HA & 리더 일렉션](verification/05-spark-operator-ha.md) | 소스 레벨 failover 분석, `LeaderElectionReleaseOnCancel` 비활성 확인 |
-| 06 | [LDAP 연동 Access Key 권한 전파](verification/06-ldap-iam.md) | 노드별 in-memory IAM 캐시(실효 5~15분)로 평가됨을 소스로 확인 |
-| 07 | [고사용률 구간 동작](verification/07-capacity.md) | 90% 스로틀링은 **없음**, 임계값에서 507 하드 거부임을 실측 |
-| 08 | [트래픽 분산 경로 (L4 vs L7)](verification/08-network-l4-l7.md) | ECMP는 연결 단위 해싱 — 소수의 무거운 연결은 불균형이 정상 |
-| 09 | [Kubeflow Spark Operator 운영 분석 보고서](verification/09-kubeflow-spark-operator-report.md) | HA·workqueue 토큰버킷·CFS throttling 종합 분석 및 튜닝 가이드 |
-| 10 | [Oracle 21c XE / 26ai Free HMS 스키마 검증](verification/10-oracle-hms-schema.md) | 두 버전에서 74개 테이블 구조 **0건 차이** 확인 |
-| 11 | [HMS(Oracle) vs Apache Polaris(REST) 비교](verification/11-hms-vs-polaris.md) | 동일 데이터 1천만 건으로 성능·기능·운영 특성 비교 |
+| 04 | [Spark Operator HA & 리더 일렉션](verification/04-spark-operator-ha.md) | 소스 레벨 failover 분석, `LeaderElectionReleaseOnCancel` 비활성 확인 |
+| 05 | [LDAP 연동 Access Key 권한 전파](verification/05-ldap-iam.md) | 노드별 in-memory IAM 캐시(실효 5~15분)로 평가됨을 소스로 확인 |
+| 06 | [고사용률 구간 동작](verification/06-capacity.md) | 90% 스로틀링은 **없음**, 임계값에서 507 하드 거부임을 실측 |
+| 07 | [트래픽 분산 경로 (L4 vs L7)](verification/07-network-l4-l7.md) | ECMP는 연결 단위 해싱 — 소수의 무거운 연결은 불균형이 정상 |
+| 08 | [Kubeflow Spark Operator 운영 분석 보고서](verification/08-kubeflow-spark-operator-report.md) | HA·workqueue 토큰버킷·CFS throttling 종합 분석 및 튜닝 가이드 |
+| 09 | [Oracle 21c XE / 26ai Free HMS 스키마 검증](verification/09-oracle-hms-schema.md) | 두 버전에서 74개 테이블 구조 **0건 차이** 확인 |
+| 10 | [HMS(Oracle) vs Apache Polaris(REST) 비교](verification/10-hms-vs-polaris.md) | 동일 데이터 1천만 건으로 성능·기능·운영 특성 비교 |
 
 ### 이 분류에서 얻은 것
 
-- **문서의 서술보다 소스와 커널이 정확하다** — 05·06·09는 공식 문서에 없거나 실제와 다른 동작(플래그 설명의 ConfigMap 표기, 리프레시 주기 상수, 무조건 Status Update)을 소스에서 직접 확인했습니다.
-- **전제부터 재검토한 건이 있다** — 04에서 "BGP 전파 누락"으로 내렸던 결론이, 실제 환경이 Geneve 터널 모드임을 확인하면서 전제 자체가 무너졌습니다. 수동 `route add` 는 원인을 고친 게 아니라 증상을 가린 것이었습니다.
-- **"없음"을 확인하는 것도 결과다** — 07에서 90% 스로틀링이 존재하지 않음을 확인한 덕에, 성능 저하의 원인을 XFS 단편화·scanner·heal 쪽으로 옮겨 찾을 수 있었습니다.
-- **비교 검증은 변인을 통제해야 의미가 있다** — 11은 동일 스토리지·동일 스키마·동일 데이터 위에서 카탈로그만 바꿔 비교했기 때문에, 읽기 성능 차이가 없다는 결과를 신뢰할 수 있었습니다.
+- **문서의 서술보다 소스와 커널이 정확하다** — 04·05·08은 공식 문서에 없거나 실제와 다른 동작(플래그 설명의 ConfigMap 표기, 리프레시 주기 상수, 무조건 Status Update)을 소스에서 직접 확인했습니다.
+- **업그레이드는 실행보다 사전 식별이 일이다** — 02에서 breaking change 3건(정책 기본값 변경, BGP v1 CRD 제거, 롤링 중 권한 이슈)을 미리 찾아낸 덕에 190노드 롤링을 무중단으로 넘길 수 있었습니다.
+- **"없음"을 확인하는 것도 결과다** — 06에서 90% 스로틀링이 존재하지 않음을 확인한 덕에, 성능 저하의 원인을 XFS 단편화·scanner·heal 쪽으로 옮겨 찾을 수 있었습니다.
+- **비교 검증은 변인을 통제해야 의미가 있다** — 10은 동일 스토리지·동일 스키마·동일 데이터 위에서 카탈로그만 바꿔 비교했기 때문에, 읽기 성능 차이가 없다는 결과를 신뢰할 수 있었습니다.

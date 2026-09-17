@@ -1,5 +1,5 @@
 ---
-title: 04. YuniKorn Gang Scheduling과 conntrack/CNI 부하
+title: 01. YuniKorn Gang Scheduling과 conntrack 부하
 ---
 
 # 🧩 스케줄러 — YuniKorn Gang Scheduling과 conntrack/CNI 부하

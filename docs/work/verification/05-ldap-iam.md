@@ -1,5 +1,5 @@
 ---
-title: 01. 인증/IAM — LDAP 연동 Access Key
+title: 05. LDAP 연동 Access Key 권한 전파
 ---
 
 # 🔐 인증/IAM — LDAP 연동 Access Key 발급과 권한 전파 검증

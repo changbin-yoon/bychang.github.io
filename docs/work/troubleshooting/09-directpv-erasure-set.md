@@ -1,5 +1,5 @@
 ---
-title: 08. DirectPV 드라이브 공유로 인한 Erasure Set 쓰기 차단
+title: 09. DirectPV 공유로 인한 Erasure Set 쓰기 차단
 ---
 
 # 🚧 용량/스토리지 — DirectPV 드라이브 공유로 인한 Erasure Set 쓰기 차단

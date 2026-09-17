@@ -1,5 +1,5 @@
 ---
-title: 02. Cilium BGP Control Plane & ClusterMesh
+title: 01. Cilium BGP Control Plane & ClusterMesh
 ---
 
 # 🌐 네트워크 — Cilium BGP Control Plane & ClusterMesh

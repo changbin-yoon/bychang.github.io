@@ -73,14 +73,13 @@ nav:
           - 01. Cilium BGP Control Plane & ClusterMesh: work/verification/01-cilium-bgp-clustermesh.md
           - 02. Cilium 1.18 → 1.19 무중단 업그레이드: work/verification/02-cilium-upgrade.md
           - 03. Prometheus Agent 모드: work/verification/03-prometheus.md
-          - 04. Geneve 터널과 커널 라우팅: work/verification/04-geneve-routing.md
-          - 05. Spark Operator HA & 리더 일렉션: work/verification/05-spark-operator-ha.md
-          - 06. LDAP 연동 Access Key 권한 전파: work/verification/06-ldap-iam.md
-          - 07. 고사용률 구간 동작: work/verification/07-capacity.md
-          - 08. 트래픽 분산 경로 (L4 vs L7): work/verification/08-network-l4-l7.md
-          - 09. Kubeflow Spark Operator 운영 분석 보고서: work/verification/09-kubeflow-spark-operator-report.md
-          - 10. Oracle 21c/26ai HMS 스키마 검증: work/verification/10-oracle-hms-schema.md
-          - 11. HMS vs Polaris 카탈로그 비교: work/verification/11-hms-vs-polaris.md
+          - 04. Spark Operator HA & 리더 일렉션: work/verification/04-spark-operator-ha.md
+          - 05. LDAP 연동 Access Key 권한 전파: work/verification/05-ldap-iam.md
+          - 06. 고사용률 구간 동작: work/verification/06-capacity.md
+          - 07. 트래픽 분산 경로 (L4 vs L7): work/verification/07-network-l4-l7.md
+          - 08. Kubeflow Spark Operator 운영 분석 보고서: work/verification/08-kubeflow-spark-operator-report.md
+          - 09. Oracle 21c/26ai HMS 스키마 검증: work/verification/09-oracle-hms-schema.md
+          - 10. HMS vs Polaris 카탈로그 비교: work/verification/10-hms-vs-polaris.md
   - 연락처: contact/index.md
 
 markdown_extensions:

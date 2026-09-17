@@ -1,5 +1,5 @@
 ---
-title: 07. ClusterMesh 신규 PodCIDR 라우팅 누락
+title: 03. ClusterMesh 신규 PodCIDR 라우팅 누락
 ---
 
 # 🌐 네트워크 — ClusterMesh 신규 PodCIDR 라우팅 누락과 No route to host
@@ -9,8 +9,8 @@ title: 07. ClusterMesh 신규 PodCIDR 라우팅 누락
     ClusterMesh는 정상이었고 원인은 언더레이 라우팅이었다. 커널이 어느 단계에서 이 에러를 만드는지까지 확인.
 
 !!! warning "보완 필요"
-    이후 확인 결과, 이 클러스터는 **Geneve 터널 모드 + DSR 구성**입니다. 터널 모드에서는 원격 PodCIDR이 커널 FIB에 없어도 정상이므로, 아래 BGP 전파 중심의 원인 분석은 **전제부터 재검토가 필요**합니다.
-    상세는 [Geneve 터널 라우팅 검증](../verification/04-geneve-routing.md) 참고.
+    아래 BGP 전파 중심의 원인 분석은 **클러스터의 실제 라우팅 모드를 전제로 재검토가 필요**합니다.
+    "원격 PodCIDR이 커널 라우팅 테이블에 없다"는 관찰이 곧 장애 원인이라고 단정하기 전에, 해당 환경에서 그 경로가 반드시 있어야 하는 구성인지부터 확인해야 합니다.
 
 ## 증상 — 같은 명령이 될 때도, 안 될 때도
 
